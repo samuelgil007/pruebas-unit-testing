@@ -8,6 +8,7 @@ jobs:
     - name: Install modules
       run: npm install
   test:
+    steps:
     - name: Run tests
       run: npm run coverage
       
