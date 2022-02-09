@@ -3,5 +3,5 @@ export interface Car {
     color:   string;
     brand:   string;
     price:    number;
-    
+    //melito
 }
