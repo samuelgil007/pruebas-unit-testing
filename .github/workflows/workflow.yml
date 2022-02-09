@@ -10,6 +10,7 @@ jobs:
     - name: Build proyect
       run: npm run build
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
