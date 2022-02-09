@@ -1,4 +1,4 @@
-import {Client} from '../interfaces/Client'
+import Client from '../interfaces/Client'
 
 const newClient: Client = {
     email: 'aaa@gmail.com',
