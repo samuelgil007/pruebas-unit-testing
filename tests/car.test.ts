@@ -11,7 +11,7 @@ test('should fail because nit is too long', () => {
     expect(validatePlate(plate)).toBe(false);
 });
 
-test('should fail because nit is too long', () => {
+test('should pass because user has money', () => {
 
 
 
@@ -19,7 +19,7 @@ test('should fail because nit is too long', () => {
 });
 
 
-test('should fail because nit is too long', () => {
+test('should pass because user has enough money to buy a car', () => {
 
     const nit: string = "as2324344556";
 

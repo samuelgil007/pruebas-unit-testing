@@ -1,6 +1,6 @@
 
 import Client  from '../interfaces/Client'
-import  Car  from '../interfaces/RaceCar'
+import  Car  from '../interfaces/Car'
 
 
 const newCar: Car = {
