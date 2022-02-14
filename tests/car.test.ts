@@ -5,7 +5,7 @@ const plate: string = "as2324344556";
 const money: number = 66666;
 const price: number = 12345;
 
-test('should fail because nit is too long', () => {
+test('should fail because plate is too large', () => {
 
 
     expect(validatePlate(plate)).toBe(false);
@@ -21,7 +21,7 @@ test('should pass because user has money', () => {
 
 test('should pass because user has enough money to buy a car', () => {
 
-    const nit: string = "as2324344556";
+
 
     expect(buyCar(money,price)).toBeGreaterThanOrEqual(0);
 });  
