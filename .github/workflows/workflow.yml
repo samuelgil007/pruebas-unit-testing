@@ -19,6 +19,7 @@ jobs:
     - name: Run tests
       run: npm run coverage
   sonarcloud:
+    needs: test
     name: SonarCloud
     runs-on: ubuntu-latest
     steps:
