@@ -25,8 +25,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-          args: >
-          -Dsonar.tests=tests/
+      - name: Install modules
+        run: npm install
+      - name: Run tests
+        run: npm run coverage 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
